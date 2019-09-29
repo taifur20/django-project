@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load cropping %}
+  <!-- Page Header -->
+
+{% block content %}
+
+  <!-- Page Header -->
+
+  <div class="bg-img" style="background-image: url('{% cropped_thumbnail instance_product 'background_image_cropping' scale=1 %}'); background-repeat: no-repeat;width=100vh;height=100vh">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="post-heading">
+            <h1>{{instance_product.name}}</h1>
+            {% if instance_product.title %}
+            <h2 class="subheading">{{instance_product.title}}</h2>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 details">
+        {{instance_product.description|safe}}
+      </div>
+    </div>
+  </div>
+  {% endblock %}

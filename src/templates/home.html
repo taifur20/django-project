@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+  <!-- Page Header -->
+
+	{% block content %}
+		<div class="slider">
+			<div id="about-slider">
+				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators visible-xs">
+						<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-slider" data-slide-to="1"></li>
+						<li data-target="#carousel-slider" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						 {% for product in product_list %}
+						<div class="item {% if forloop.first%} active {% endif %}">
+							<img src="{{ product.background_image_cropping_url }}" class="img-responsive" alt="">
+							<div class="carousel-caption">
+								<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+									<h2><span>{{ product.name }}</span></h2>
+								</div>
+								<div class="col-md-10 col-md-offset-1">
+									<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+										<p>{{ product.title }}</p>
+									</div>
+								</div>
+							</div>
+					    </div>
+							{% endfor %}
+					</div>
+
+					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+
+					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div> <!--/#carousel-slider-->
+			</div><!--/#about-slider-->
+		</div><!--/#slider-->
+
+		<div class="gallery">
+			<div class="text-center">
+				<h2>Projects</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quod voluptate consequuntur ad quasi, dolores obcaecati ex aliquid, dolor provident </p>
+			</div>
+			<div class="container">
+	      {% for product in product_list %}
+				<div class="col-md-4">
+					<figure class="effect-marley">
+						 <a href="{{ product.get_absolute_url }}"><img src="{{ product.background_image_cropping_url }}" alt="" class="img-responsive" width="100%"/></a>
+						<figcaption>
+							<h4>{{ product.name }}</h4>
+							<p>{{ product.title }}</p>
+						</figcaption>
+					</figure>
+				</div>
+	      {% endfor %}
+			</div>
+	    <div class="container">
+	      {% for product in product_list %}
+	      <div class="col-md-4">
+	        <figure class="effect-marley">
+	           <a href="{{ product.get_absolute_url }}"><img src="{{ product.background_image_cropping_url }}" alt="" class="img-responsive" width="100%"/></a>
+	          <figcaption>
+	            <h4>{{ product.name }}</h4>
+	            <p>{{ product.title }}</p>
+	          </figcaption>
+	        </figure>
+	      </div>
+	      {% endfor %}
+	    </div>
+		</div>
+  {% endblock %}

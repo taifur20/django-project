@@ -1,0 +1,131 @@
+
+git config --global user.email "shampa@mahdil.com"
+
+
+
+
+git config --global user.name "Shamima Akter Shampa"
+
+
+Command line:
+python -m virtualenv virtualenv
+virtualenv\Scripts\activate
+django-admin startproject mahdil .
+python manage.py startapp app
+python manage.py createsuperuser
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+python manage.py demosetup
+
+npm init
+bower init
+
+python manage.py changepassword admin
+python manage.py reorder main.Text
+
+virtualenv\Scripts\activate
+cd src
+python manage.py runserver
+
+python -m virtualenv virtualenv
+virtualenv\Scripts\activate
+cd src
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+App install:
+pip install django
+pip install pillow
+pip install djangorestframework
+pip install django-import-export
+pip install django-modeltranslation
+pip install django-ckeditor
+pip install pillow
+pip install -r requirements.txt
+pip install django-photologue
+django-crispy-forms
+django-registration-redux
+
+pip install MySQL-python
+
+
+Installed App:
+'django.contrib.sites',
+
+
+git init
+git add .
+git commmit -m "Add all my files"
+git pull origin master
+git push origin master
+
+
+
+bower init
+bower install bootstrap --save
+sass --watch scss/main.scss:css/main.css
+
+
+ul li:last-child{
+
+	$('#id_subject').on('change',function(){		  
+		if(this.value === '') {
+			$(this).css('color','rgba(77, 77, 77, 0.5)').css('font-size', '20px');
+		}
+		else {
+			$(this).css('color','black').css('font-size','15px');			
+		}
+	});
+
+username:ummenurtubba
+password:Admin12#45
+
+
+install in bower
+
+bower install components-font-awesome --save
+bower install bootstarp --save
+
+grunt uncss
+npm remove --save-dev grunt-autoprefixer
+
+npm install --save-dev grunt-postcss autoprefixer
+
+https://github.com/nDmitry/grunt-postcss
+
+m.mahdil.net
+Sathi / idwAVf67FkBF
+
+unur@motherbase.io
+Admin12@45
+
+4111111111111111 
+
+Team viewr id=277 564 568
+
+
+1. Remove SITE_ID from settings.py.
+2. Add  # Sites 'django.contrib.sites.middleware.CurrentSiteMiddleware' in MIDDLEWARE_CLASSES of Settings.py for taking the current site.
+3. Add a Site_Extra model in main app.
+4. After makemigration and migrate load db of main app.
+5. Then add "from django.contrib.sites.shortcuts import get_current_site" in views.py.
+6. We can get the current_site object by current_site = get_current_site(request).														
+
+
+for open command promt
+
+https://www.windowscentral.com/add-open-command-window-here-back-context-menu-windows-10	
+
+
+Error:
+My Sql Server Run gone away 
+Solution:
+C:\xampp\mysql\bin\my.ini:
+max_allowed_packet = 16M
+C:\xampp\mysql\bin\my.ini:
+innodb_log_file_size = 20M
+
+bower install bootstrap-material-design#v4.0.2								

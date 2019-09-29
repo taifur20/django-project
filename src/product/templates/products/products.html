@@ -1,0 +1,13 @@
+{% for product in product_list %}
+<div class="col-lg-6 portfolio-item">
+	<div class="card h-100">
+		<a href="{{ product.get_absolute_url }}"><img class="card-img-top" src="{{ product.background_image.url }}" alt=""></a>
+		<div class="card-body">
+			<h4 class="card-title">
+				<a href="#">{{ product.name }}</a>
+			</h4>
+			<p class="card-text">{{ product.description }}</p>
+		</div>
+	</div>
+</div>
+{% endfor %}

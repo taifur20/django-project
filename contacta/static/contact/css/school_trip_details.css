@@ -1,0 +1,95 @@
+.border-left {
+    border-left:1px solid #621b82;
+    margin-bottom: 25px;
+    padding-right: 10px;
+}
+
+.budget {
+    border: 2px solid #ddd;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 70px;
+    padding: 1% 5%;
+}
+
+.date-time {
+    margin-right: 18px;
+}
+
+.drivers {
+    margin-top: 3%;
+}
+
+.form-titles {/*
+    color: #621b82;*/
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1.6px;
+    margin-top: 0;
+    text-align: left;
+}
+
+h1 {
+    /*color: #621b82;*/
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 36%;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 7%;
+}
+
+.main-wraper .container .row {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.simple-text {
+    margin-bottom: 23px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.title {
+    /*color: #612180;*/
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0 !important;
+}
+table {
+    border: 2px solid #c1c1c1 !important;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #c1c1c1 !important;
+    padding: 5px;
+    text-align: left;    
+}
+.various {
+   border: 2px solid #c1c1c1 !important;
+   padding: 2%; 
+}
+
+header {
+    display: none;
+}
+
+.loading {
+    display: none;
+}
+
+footer {
+    display: none;
+}

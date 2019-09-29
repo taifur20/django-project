@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+  <!-- Page Header -->
+
+	{% block content %}
+	<div class="gallery">
+		<div class="text-center">
+			<h2>Projects</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quod voluptate consequuntur ad quasi,<br> dolores obcaecati ex aliquid, dolor provident </p>
+		</div>
+		<div class="container">
+			{% for product in product_list %}
+			<div class="col-md-4">
+				<figure class="effect-marley">
+					<a href="{{ product.get_absolute_url }}"><img src="{{ product.background_image_cropping_url }}" alt="" class="img-responsive"/></a>
+					<figcaption>
+						<h4>{{ product.name }}</h4>
+						<p>{{ product.title }}</p>
+					</figcaption>
+				</figure>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+  {% endblock %}

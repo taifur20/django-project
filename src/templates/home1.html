@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_title %}Welcome | {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<div class='row'>
+<h3>Recommended Products</h3>
+{% for product in product_list %}
+<a href='{{ product.get_absolute_url }}'>{{ product.id }}</a>
+{% endfor %}
+</div>
+
+<div class='row'>
+<h3>Featured Products</h3>
+
+</div>
+
+{% endblock %}
