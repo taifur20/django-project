@@ -1,0 +1,19 @@
+version: '2'  
+services:  
+  nginx:
+    image: nginx:alpine
+    container_name: nz01
+    ports:
+      - "80:8000"
+    volumes:
+      - ./src:/src
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - web
+  web:
+    build: .
+    container_name: dz01
+    volumes:
+      - ./src:/src
+    expose:
+      - "8000"
