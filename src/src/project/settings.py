@@ -23,12 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&w2ol&+5u%swie4i=fz7a&v2cd6@ic4_k^b$g*y!lpb9htef#a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # HOSTS
-ALLOWED_HOSTS = [
-    'localhost','*'
-]
+ALLOWED_HOSTS = ['localhost','*']
 
 # Application definition
 
@@ -144,7 +142,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 
 # Media files (uploads)
